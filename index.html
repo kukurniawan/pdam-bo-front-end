@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head><base href="/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+	<title>PdamOffice3</title>
+
+  <script type="text/javascript">
+    var Ext = Ext || {};
+    Ext.beforeLoad = function (tags) {
+      var s = location.search;
+      var profile;
+      if (s.match(/\bdesktop\b/)) { profile = 'desktop' }
+      else if (s.match(/\bphone\b/)) { profile = 'phone' }
+      else { profile = tags.desktop ? 'desktop' : 'phone' }
+      Ext.manifest ='generatedFiles/' + profile;
+    };
+  </script>
+
+  <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+  <script id="microloader" data-app="ece04a9b-cd0f-4e49-b7c1-c9ded04fcf23" type="text/javascript" src="generatedFiles/bootstrap.js"></script>
+</head>
+  <body class="launching">
+    <div id="splash" style="margin-top:20%;font-family:Arial;font-size:64px;text-align:center;color:#404040;">
+      <div id="theLoadingText">LOADING...</div>
+      <i style="margin:20px;" class="fa fa-spinner fa-spin"></i>
+    </div>
+  <script type="text/javascript" src="main.js?a48e1db1a9f5de3ffc4d"></script><script type="text/javascript" src="main.js?e92617fda1157953472c"></script><script type="text/javascript" src="main.js?745e3b4fa3509a8f4ad5"></script><script type="text/javascript" src="main.js?2e6d6ac740c2dfe806fe"></script><script type="text/javascript" src="main.js?69301df2849c35631c10"></script><script type="text/javascript" src="main.js?75f94c541c54d4abec46"></script><script type="text/javascript" src="main.js?7b0f831e48cfe293a8a8"></script><script type="text/javascript" src="main.js?8271d0321ce539a7eb8c"></script><script type="text/javascript" src="main.js?2089a238683c98406a73"></script><script type="text/javascript" src="main.js?9ca7484d8fcdd5c0d087"></script></body>
+</html>
